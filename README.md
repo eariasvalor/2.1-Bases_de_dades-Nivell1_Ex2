@@ -117,7 +117,7 @@ El model segueix una estructura **relacional normalitzada**, amb les següents t
 
 ## 🧩 Diagrama relacional
 
-![Model relacional de la pizzeria](src/pizzeria_model.png)
+![Model relacional de la pizzeria](src/pizzeria_model2.png)
 
 ---
 
