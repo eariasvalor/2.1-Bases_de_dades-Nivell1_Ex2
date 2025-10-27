@@ -38,11 +38,13 @@ FOREIGN KEY (province_id) REFERENCES province(id)
 
 CREATE TABLE worker (
 id INT AUTO_INCREMENT PRIMARY KEY,
+store_id INT NOT NULL,
 name VARCHAR(100) NOT NULL,
 surname VARCHAR(100) NOT NULL,
 nif VARCHAR(10) NOT NULL UNIQUE,
 telephone VARCHAR(20) NOT NULL,
-position VARCHAR(12) NOT NULL CHECK (position IN ('COOK', 'DRIVER'))
+position VARCHAR(12) NOT NULL CHECK (position IN ('COOK', 'DRIVER')),
+FOREIGN KEY (store_id) REFERENCES store(id)
 );
 
 CREATE TABLE category (
