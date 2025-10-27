@@ -111,7 +111,7 @@ El model segueix una estructura **relacional normalitzada**, amb les següents t
 - **store → ordering** → 1:N  
 - **worker → ordering** → 1:N (només repartidors per a `DELIVERY`)  
 - **ordering → online_order → product** → N:M
-- **store → worker** → 1:N
+- **store → worker** → 1:1
 
 ---
 
